@@ -1,0 +1,213 @@
+
+.navbar{
+    color:white;
+}
+#welcome-section
+{
+  
+padding-top:100px;/*to avoid overlabing with fixed element*/
+background-color:white;
+
+/*this to make this section fit the whole screen*/
+position:relative;
+/* equal to the height of the viewport*/
+min-height: 100vh;
+
+text-align:center;
+min-width: 100vw;
+ background-size: 100%;
+
+/*no space left and right work with fixed and absolute*/
+/*left:0;
+right:0;*/
+
+color: #020b13;
+
+}
+.row {
+    display:flex;
+    align-items:center;  
+ } 
+ .skills {
+   min-height: 320px;/*because its not work fine in IE*/
+    border:solid;
+   border-color:#e3f1f8; 
+   border-radius:5%; 
+   margin-bottom: 15px;
+   height: 15em;
+}
+
+.skills h3{
+    background-color:#e3f1f8 ;
+    border-radius:5%;
+    color: #020b13;
+}
+#skillContainer{
+    width:80%;
+  text-align: center;
+
+}
+#skillContainer .row{
+    justify-content: center;
+}
+#workContainer{
+    width:97%;
+    text-align: center;  
+}
+#workContainer .row{
+    justify-content: center;
+}
+#work{
+    background-color: #e3f1f8;
+    min-width: 100vw;
+ background-size: 100%;
+ position:relative;
+ text-align: center;
+}
+.project-tile img{
+   width:230px;
+    height: 150px;  
+     /* width:80%;
+    height: 60%;  */
+
+}
+.col{
+    min-width:300px; 
+    text-align: center; 
+}
+
+.project-tile{
+    text-align:center;
+    /*required for absolute child to work correctly*/
+     position:relative;
+   height:auto;
+   width:100%;
+   
+    padding :20px 20px  20px  20px ;
+    margin-bottom: 20px;
+        
+    }
+ 
+.project-tile div:hover{
+    color: #020b13;
+}
+
+#web{
+    background-color:#073857;
+   
+}
+#window{
+    background-color:  #073857; 
+}
+ 
+
+#mark{
+    background-color:rgb(72, 61, 90) ; 
+  
+}
+
+
+
+#queen{
+    background-color:  #073857; 
+}
+#queenMob{
+    background-color:#073857 
+}
+/*div is for fix in container p not working well*/
+.project-tile div{
+    text-decoration:none;
+  padding-top:10px;
+    padding-bottom:10px;
+    background-color:#020b13;
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+/*used to aligh element in side container , should be absolute nd width 100%*/
+   right:0;
+   left:0;
+   bottom:0;
+position:absolute;
+width:100%;  
+}
+#contact{
+    background-color: #09263c;
+    text-align: center;
+  
+color: white;
+
+ background-size: 100%;
+ padding-top: 100px;
+ min-width: 100vw;
+ background-size: 100%;
+ min-height: 50vh;
+
+
+}
+/******************************/
+/* #contact .container-fluid .row .col a:hover{ */
+    .moveMe:hover{
+    text-decoration:none;
+   animation-name:moveit;
+   animation-fill-mode:forwards;
+   animation-duration:1s;
+    -webkit-animation-name: moveit;
+   -webkit-animation-duration:1s;
+  animation-direction: alternate;
+}
+@keyframes moveit{
+
+    from {top: 0px;}
+  to {top: 10px;}
+   /*0% {
+        transform:scale(0.8);
+    }*/
+}
+#contact h1{
+ font-size:30px;
+}
+#contact p{
+     font-size:20px;
+}
+.tooltip1 .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #cc0000;;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  .tooltip1:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  #contact div{
+ 
+    display:inline;
+     text-decoration:none;
+  
+   line-height:30px;
+   vertical-align:top;
+     color:white;
+  }
+
+  #copyR p{
+    color:#e3f1f8;  
+    font-weight:400;
+   font-style: italic;
+
+border-top:solid;
+
+ /*margin-left:-8px;*/
+padding-top: 15px;
+ min-width: 100vw;
+
+  }
+ 
+
+
